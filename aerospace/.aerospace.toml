@@ -222,7 +222,7 @@ on-mode-changed = []
     # Own launch application
     alt-b = 'exec-and-forget Firefox'
     alt-shift-s = 'exec-and-forget screencapture -i -c'
-    alt-t = 'exec-and-forget open -n /Applications/kitty.app'
+    alt-t = 'exec-and-forget kitty --single-instance'
     alt-c = 'exec-and-forget code'
     # alt-c = 'exec-and-forget open -n /Applications/Visual\ Studio\ Code.app'
     alt-e = 'exec-and-forget open /System/Library/CoreServices/Finder.app'
