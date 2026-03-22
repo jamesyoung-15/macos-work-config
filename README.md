@@ -12,6 +12,10 @@ My configs, scripts, and other files for setting up my work laptop (Macbook M4 1
 - Package Manager: Homebrew
 - Shell: Zsh
 - Terminal Emulator: Kitty
+- Browser: Firefox
+- IDE: VSCode
+- Text Editor: Neovim, Kate
+- Windows Remote: Windows App
 
 ## Setup Instructions
 
