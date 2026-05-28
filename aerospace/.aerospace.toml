@@ -220,7 +220,7 @@ on-mode-changed = []
     alt-shift-right = ['move-node-to-workspace --wrap-around next', 'workspace --wrap-around next']
 
     # Own launch application
-    alt-b = 'exec-and-forget Firefox'
+    alt-b = 'exec-and-forget open -a "Google Chrome" --args --enable-blink-features=MiddleClickAutoscroll'
     alt-shift-s = 'exec-and-forget screencapture -i -c'
     alt-t = 'exec-and-forget kitty --single-instance ~/'
     alt-c = 'exec-and-forget code'
@@ -234,10 +234,10 @@ on-mode-changed = []
     3 = ['main']
     4 = ['main']
     5 = ['main']
-    6 = ['secondary', 'main']
-    7 = ['secondary', 'main']
-    8 = ['secondary', 'main']
-    9 = ['secondary', 'main']
+    6 = [3, 'secondary', 'main']
+    7 = [3, 'secondary', 'main']
+    8 = [3, 'secondary', 'main']
+    9 = [3, 'secondary', 'main']
     O = ['^built-in retina display$', 'secondary', 'main']
     Z = ['^built-in retina display$', 'secondary', 'main']
 
