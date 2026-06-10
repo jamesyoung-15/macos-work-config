@@ -1,61 +1,111 @@
 tap "hashicorp/tap"
 tap "nikitabobko/tap"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Automate deployment, configuration, and upgrading
 brew "ansible"
+# Checks ansible playbooks for practices and behaviour
 brew "ansible-lint"
+# Official Amazon AWS command-line interface
 brew "awscli"
+# Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
+# Simple, fast and user-friendly alternative to find
 brew "fd"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# Quickly rewrite git repository history
 brew "git-filter-repo"
+# Git extension for versioning large files
 brew "git-lfs"
+# Compute various size metrics for a Git repository
 brew "git-sizer"
+# Open-source GitLab command-line tool
 brew "glab"
+# Improved top (interactive process viewer)
 brew "htop"
+# Command-line interface for JFrog products
 brew "jfrog-cli"
+# Kubernetes command-line interface
 brew "kubernetes-cli"
+# Simple terminal UI for git commands
 brew "lazygit"
+# LLM inference in C/C++
 brew "llama.cpp"
+# Run a Kubernetes cluster locally
 brew "minikube"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Port scanning utility for large networks
 brew "nmap"
+# Manage multiple Node.js versions
 brew "nvm"
+# Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# AI coding agent, built for the terminal
 brew "opencode"
+# OpenShift command-line interface tools
 brew "openshift-cli"
+# Swiss-army knife of markup format conversion
 brew "pandoc"
+# Tool for managing OCI containers and pods
 brew "podman"
+# Command-line shell and scripting language
 brew "powershell", link: false
+# Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
+# Cross-shell prompt for astronauts
 brew "starship"
+# Terraform Language Server
 brew "terraform-ls"
+# Official tldr client written in Rust
 brew "tlrc"
+# Terminal multiplexer
 brew "tmux"
+# Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Vi 'workalike' with many additional features
 brew "vim"
+# Network analyzer and capture tool - without graphical user interface
 brew "wireshark"
+# Extensible command-line tool to format YAML files
 brew "yamlfmt"
+# Linter for YAML files
 brew "yamllint"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
-brew "hashicorp/tap/terraform"
+# Password manager that keeps all passwords secure behind one password
 cask "1password"
-cask "nikitabobko/tap/aerospace"
+# Open source IDE for exploring and testing APIs
 cask "bruno"
+# Terminal-based AI coding assistant
 cask "claude-code"
+# Drivers for DisplayLink docks, adapters and monitors
 cask "displaylink"
+# App to build and share containerised applications and microservices
 cask "docker-desktop"
 cask "font-hack-nerd-font"
 cask "font-roboto-mono-nerd-font"
 cask "font-symbols-only-nerd-font"
+# Web browser
 cask "google-chrome"
+# Keyboard customiser
 cask "karabiner-elements"
+# GPU-based terminal emulator
 cask "kitty"
+# Command-line shell and scripting language
 cask "powershell"
+# Team communication and collaboration software
 cask "slack"
+# Open-source code editor
 cask "visual-studio-code"
+# Connect to Windows
 cask "windows-app"
+# Network protocol analyzer
 cask "wireshark-app"
+# Video communication and virtual meeting platform
 cask "zoom"
 vscode "anthropic.claude-code"
 vscode "catppuccin.catppuccin-vsc"
