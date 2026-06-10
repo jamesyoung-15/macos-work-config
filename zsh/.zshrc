@@ -15,10 +15,6 @@ fastfetch
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/James.Young@amfam.com/.lmstudio/bin"
-# End of LM Studio CLI section
-
 # AMFAM Claude Code Config
 export ANTHROPIC_BASE_URL=https://ava-developers.amfam.com
 export ANTHROPIC_AUTH_TOKEN=""
