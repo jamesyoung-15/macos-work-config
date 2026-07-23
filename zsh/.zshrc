@@ -18,7 +18,7 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 # AMFAM Claude Code Config
 export ANTHROPIC_BASE_URL=https://ava-developers.amfam.com
 export ANTHROPIC_AUTH_TOKEN=""
-export ANTHROPIC_MODEL=claude-sonnet-4-5
+export ANTHROPIC_MODEL=claude-sonnet-4-6
 export ANTHROPIC_DEFAULT_HAIKU_MODEL=claude-haiku-4-5
 export CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1
 export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
@@ -30,3 +30,7 @@ export PERL_LWP_SSL_CA_FILE=${CURL_CA_BUNDLE}
 export REQUESTS_CA_BUNDLE=${CURL_CA_BUNDLE}
 export SSL_CERT_FILE=${CURL_CA_BUNDLE}
 export CLOUDSDK_PYTHON_SSLCERTFILE=${CURL_CA_BUNDLE}
+if [ /opt/homebrew/bin/oc ]; then
+  source <(oc completion zsh)
+  compdef _oc oc
+fi
