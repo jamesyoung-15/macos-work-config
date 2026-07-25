@@ -4,17 +4,6 @@ export WORDCHARS='*?_-.[]~&;!#$%^(){}<>'
 # fix kitty terminal issues with SSH
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-autoload -Uz compinit
-compinit
-eval "$(starship init zsh)"
-fastfetch
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /opt/homebrew/bin/terraform terraform
-
 # AMFAM Claude Code Config
 export ANTHROPIC_BASE_URL=https://ava-developers.amfam.com
 export ANTHROPIC_AUTH_TOKEN=""
@@ -30,7 +19,26 @@ export PERL_LWP_SSL_CA_FILE=${CURL_CA_BUNDLE}
 export REQUESTS_CA_BUNDLE=${CURL_CA_BUNDLE}
 export SSL_CERT_FILE=${CURL_CA_BUNDLE}
 export CLOUDSDK_PYTHON_SSLCERTFILE=${CURL_CA_BUNDLE}
-if [ /opt/homebrew/bin/oc ]; then
+
+# node version manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+
+autoload -Uz compinit
+# initializes zsh's native completion system
+compinit
+# enables bash-style completion definitions (needed for some CLIs)
+autoload -U +X bashcompinit && bashcompinit
+# terraform uses its own completion command via complete
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+if [ -x /opt/homebrew/bin/oc ]; then
+  # load openshift CLI completion into zsh
   source <(oc completion zsh)
   compdef _oc oc
 fi
+
+eval "$(starship init zsh)"
+fastfetch
