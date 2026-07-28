@@ -4,10 +4,19 @@ export WORDCHARS='*?_-.[]~&;!#$%^(){}<>'
 # fix kitty terminal issues with SSH
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
+# own aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias jiraitems=$'acli jira workitem search --jql "assignee = currentUser() AND status = \'In Progress\'"'
+alias llamaqwen35b='llama-server -hf unsloth/Qwen3.5-35B-A3B-GGUF:Q4_K_XL --port 8089'
+alias llamaqwen9b='llama-server -hf unsloth/Qwen3.5-9B-GGUF:Q4_K_M --port 8089'
+alias aap-chatops-start='/Users/James.Young@amfam.com/dev/side-projects/aap-chatops/scripts/run-bot-tmux.sh'
+alias jyy='jyy-amfam-toolkit'
+
 # AMFAM Claude Code Config
 export ANTHROPIC_BASE_URL=https://ava-developers.amfam.com
 export ANTHROPIC_AUTH_TOKEN=""
-export ANTHROPIC_MODEL=claude-sonnet-4-6
+export ANTHROPIC_MODEL=claude-sonnet-5
 export ANTHROPIC_DEFAULT_HAIKU_MODEL=claude-haiku-4-5
 export CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1
 export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
@@ -42,3 +51,7 @@ fi
 
 eval "$(starship init zsh)"
 fastfetch
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+zstyle ':completion:*' menu select
