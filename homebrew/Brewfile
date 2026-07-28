@@ -67,8 +67,12 @@ brew "terraform-ls"
 brew "tlrc"
 # Terminal multiplexer
 brew "tmux"
+# Command-line tool for sharing terminal over the web
+brew "ttyd"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Your CLI home video recorder
+brew "vhs"
 # Vi 'workalike' with many additional features
 brew "vim"
 # Network analyzer and capture tool - without graphical user interface
@@ -90,6 +94,8 @@ cask "affine"
 cask "bruno"
 # Terminal-based AI coding assistant
 cask "claude-code"
+# Provides developers secure tunnels to share local web services
+cask "devtunnel"
 # Drivers for DisplayLink docks, adapters and monitors
 cask "displaylink"
 # App to build and share containerised applications and microservices
@@ -149,3 +155,6 @@ vscode "tombi-toml.tombi"
 vscode "tomoki1207.pdf"
 vscode "vscodevim.vim"
 vscode "yzhang.markdown-all-in-one"
+uv "jyy-amfam-toolkit", source: "file:///Users/James.Young@amfam.com/dev/side-projects/jyy-amfam-toolkit"
+npm "@microsoft/m365agentsplayground"
+npm "@microsoft/teams.cli"
