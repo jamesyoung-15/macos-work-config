@@ -15,6 +15,8 @@ brew "fastfetch"
 brew "fd"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Quickly rewrite git repository history
 brew "git-filter-repo"
 # Git extension for versioning large files
@@ -51,6 +53,8 @@ brew "opencode"
 brew "openshift-cli"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
+# AI agent toolkit
+brew "pi-coding-agent"
 # Tool for managing OCI containers and pods
 brew "podman"
 # Command-line shell and scripting language
@@ -127,6 +131,7 @@ vscode "davidanson.vscode-markdownlint"
 vscode "dbaeumer.vscode-eslint"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
+vscode "gitlab.gitlab-workflow"
 vscode "mechatroner.rainbow-csv"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
@@ -155,6 +160,7 @@ vscode "tombi-toml.tombi"
 vscode "tomoki1207.pdf"
 vscode "vscodevim.vim"
 vscode "yzhang.markdown-all-in-one"
-uv "jyy-amfam-toolkit", source: "file:///Users/James.Young@amfam.com/dev/side-projects/jyy-amfam-toolkit"
+uv "jyy-amfam-toolkit"
 npm "@microsoft/m365agentsplayground"
 npm "@microsoft/teams.cli"
+npm "@playwright/mcp"
