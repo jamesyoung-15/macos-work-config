@@ -1,4 +1,5 @@
 tap "atlassian/acli"
+tap "go-task/tap"
 tap "hashicorp/tap"
 tap "nikitabobko/tap"
 # Display directories as trees (with optional color/HTML output)
@@ -25,6 +26,8 @@ brew "git-lfs"
 brew "git-sizer"
 # Open-source GitLab command-line tool
 brew "glab"
+# Task is a task runner/build tool that aims to be simpler and easier to use
+brew "go-task", link: false
 # Kubernetes package manager
 brew "helm"
 # Improved top (interactive process viewer)
@@ -91,6 +94,8 @@ brew "yq"
 brew "atlassian/acli/acli", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Command-line interface for 1Password
+cask "1password-cli"
 cask "aerospace"
 # Note editor and whiteboard
 cask "affine"
@@ -107,6 +112,8 @@ cask "docker-desktop"
 cask "font-hack-nerd-font"
 cask "font-roboto-mono-nerd-font"
 cask "font-symbols-only-nerd-font"
+# A fast, cross-platform build tool inspired by Make, designed for modern workflows.
+cask "go-task/tap/go-task", trusted: true
 # Web browser
 cask "google-chrome"
 # Keyboard customiser
