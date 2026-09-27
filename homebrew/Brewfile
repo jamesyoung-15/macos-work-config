@@ -1,7 +1,10 @@
+tap "anomalyco/tap"
 tap "atlassian/acli"
 tap "go-task/tap"
 tap "hashicorp/tap"
 tap "nikitabobko/tap"
+# Simple, modern, secure file encryption
+brew "age"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Automate deployment, configuration, and upgrading
@@ -48,10 +51,6 @@ brew "neovim"
 brew "nmap"
 # Manage multiple Node.js versions
 brew "nvm"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
-# AI coding agent, built for the terminal
-brew "opencode"
 # OpenShift command-line interface tools
 brew "openshift-cli"
 # Swiss-army knife of markup format conversion
@@ -61,11 +60,15 @@ brew "pi-coding-agent"
 # Tool for managing OCI containers and pods
 brew "podman"
 # Command-line shell and scripting language
-brew "powershell", link: false
+brew "powershell"
 # Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Editor of encrypted files
+brew "sops"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Terraform Language Server
@@ -90,6 +93,8 @@ brew "yamlfmt"
 brew "yamllint"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode", trusted: true
 # Software to interact with Atlassian Cloud from the terminal
 brew "atlassian/acli/acli", trusted: true
 # Password manager that keeps all passwords secure behind one password
@@ -136,10 +141,12 @@ vscode "catppuccin.catppuccin-vsc"
 vscode "charliermarsh.ruff"
 vscode "davidanson.vscode-markdownlint"
 vscode "dbaeumer.vscode-eslint"
-vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
 vscode "gitlab.gitlab-workflow"
+vscode "hediet.vscode-drawio"
+vscode "janisdd.vscode-edit-csv"
 vscode "mechatroner.rainbow-csv"
+vscode "mk12.better-git-line-blame"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
@@ -166,6 +173,7 @@ vscode "sst-dev.opencode"
 vscode "tombi-toml.tombi"
 vscode "tomoki1207.pdf"
 vscode "vscodevim.vim"
+vscode "vstirbu.vscode-mermaid-preview"
 vscode "yzhang.markdown-all-in-one"
 uv "jyy-amfam-toolkit"
 npm "@microsoft/m365agentsplayground"
