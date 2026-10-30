@@ -16,7 +16,7 @@ alias jyy='jyy-amfam-toolkit'
 # AMFAM Claude Code Config
 export ANTHROPIC_BASE_URL=https://ava-developers.amfam.com
 export ANTHROPIC_AUTH_TOKEN=""
-export ANTHROPIC_MODEL=claude-sonnet-5
+export ANTHROPIC_MODEL=claude-sonnet-5-5
 export ANTHROPIC_DEFAULT_HAIKU_MODEL=claude-haiku-4-5
 export CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1
 export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1

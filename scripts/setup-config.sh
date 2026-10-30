@@ -16,20 +16,23 @@ ln -sfn "$REPO_DIR/starship/starship.toml" "$CONFIG_DIR/starship.toml"
 ln -sfn "$REPO_DIR/aerospace/default-config.toml" "$HOME/.aerospace.toml"
 ln -sfn "$REPO_DIR/kitty/kitty.conf" "$CONFIG_DIR/kitty/kitty.conf"
 ln -sfn "$REPO_DIR/kitty/current-theme.conf" "$CONFIG_DIR/kitty/current-theme.conf"
-ln -sfn "$REPO_DIR/zsh/.zshrc" "$HOME/.zshrc"
 ln -sfn "$REPO_DIR/zsh/.zprofile" "$HOME/.zprofile"
 ln -sfn "$REPO_DIR/fastfetch/config.jsonc" "$CONFIG_DIR/fastfetch/config.jsonc"
 ln -sfn "$REPO_DIR/nvim/init.lua" "$CONFIG_DIR/nvim/init.lua"
-ln -sfn "$REPO_DIR/nightTab/nightTab-config.json" "$CONFIG_DIR/nightTab-config.json"
 
-# Install Homebrew packages
+# Copy relevant config files
+echo "Copying relevant config files..."
+cp "$REPO_DIR/zsh/.zshrc" "$HOME/.zshrc"
+
+# Warn if Homebrew is not installed
 echo "Installing Homebrew packages..."
 if ! command -v brew &> /dev/null; then
-    echo "Homebrew not found. Installing..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo "Homebrew not found. Please install it before running this script."
 fi
-
-brew bundle --file="$REPO_DIR/homebrew/Brewfile"
+else
+    echo "Homebrew is installed. Installing packages from Brewfile..."
+    brew bundle --file="$REPO_DIR/homebrew/Brewfile"
+fi
 
 echo "Configuration setup complete!"
 echo "Installed and symlinked:"
