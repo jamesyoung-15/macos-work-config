@@ -93,8 +93,8 @@ brew "yamlfmt"
 brew "yamllint"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
-# The AI coding agent built for the terminal.
-brew "anomalyco/tap/opencode", trusted: true
+# OpenCode V2 - the AI coding agent for the terminal
+brew "anomalyco/tap/opencode-v2", trusted: true
 # Software to interact with Atlassian Cloud from the terminal
 brew "atlassian/acli/acli", trusted: true
 # Password manager that keeps all passwords secure behind one password
@@ -164,8 +164,6 @@ vscode "redhat.ansible"
 vscode "redhat.vscode-openshift-connector"
 vscode "redhat.vscode-openshift-extension-pack"
 vscode "redhat.vscode-redhat-account"
-vscode "redhat.vscode-rsp-ui"
-vscode "redhat.vscode-server-connector"
 vscode "redhat.vscode-xml"
 vscode "redhat.vscode-yaml"
 vscode "samuelcolvin.jinjahtml"
@@ -175,7 +173,6 @@ vscode "tomoki1207.pdf"
 vscode "vscodevim.vim"
 vscode "vstirbu.vscode-mermaid-preview"
 vscode "yzhang.markdown-all-in-one"
-uv "jyy-amfam-toolkit"
 npm "@microsoft/m365agentsplayground"
 npm "@microsoft/teams.cli"
 npm "@playwright/mcp"
